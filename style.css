@@ -4,7 +4,6 @@
 
 html {
     width: 100%;
-    border: 4px solid red;
 }
 
 body {
@@ -16,7 +15,6 @@ body {
 }
 
 .container {
-  border: 4px solid rgb(228, 243, 16);
   width: 80%;
   margin-left: auto;
   margin-right: auto;
@@ -24,7 +22,6 @@ body {
 
 @media (max-width:500px) {
   .container {
-    border: 4px solid rgb(228, 243, 16);
     width: 100%;
   }
 }
@@ -42,13 +39,11 @@ body {
   font-size: 45px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: 100;
-  border: 4px solid rgb(243, 16, 27);
 }
 
 .logo a {
   text-decoration: none;
   color: whitesmoke;
-  border: 4px solid rgb(228, 243, 16);
 }
 
 .nav {
@@ -114,7 +109,6 @@ button {
 }
 
 .footer {
-  border: 4px solid rgb(250, 250, 247);
   height: 200px;
 }
 
