@@ -3,7 +3,7 @@
   }
 
 html {
-    width: 90%;
+    width: 100%;
     border: 4px solid red;
 }
 
@@ -14,42 +14,69 @@ body {
     background: url(img/bgimg.jpg) no-repeat fixed center ;
 }
 
-.header {
-    padding: 30px;
-    text-align: center;
-    background: rgb(190, 188, 197);
-    font-size: 50px;
+.container {
+  border: 4px solid rgb(228, 243, 16);
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.topnav {
-    overflow: hidden;
-    background-color: #333;
+@media (max-width:500px) {
+  .container {
+    border: 4px solid rgb(228, 243, 16);
+    width: 100%;
   }
-  
-  /* Style the topnav links */
+}
+
+
+.header {
+  width: 100%;
+  background: #272E30;
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  font-size: 45px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 100;
+  border: 4px solid rgb(243, 16, 27);
+}
+
+.logo a {
+  text-decoration: none;
+  color: whitesmoke;
+  border: 4px solid rgb(228, 243, 16);
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #dddddd;
+}
+
 .nav li {
-    float: left;
-    display: block;
-  }
+  float: left;
+  align-self: center;
+}
 
-  .topnav li > a {
-    color: #f2f2f2;
-    text-align: center;
-    padding: 15px 15px;
-    text-decoration: none;
-  }
+.nav li > a {
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+  color: black;
+}
 
-  
-  /* Change color on hover */
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
+.nav li > a:hover:not(.active) {
+  background-color: #cab3b3;
+}
 
-  @media screen and (max-width: 400px) {
-    .nav li {
-      float: none;
-      width: 100px;
-      padding: 0;
-    }
-  }
+.active {
+  background-color: #60a3b8;
+}
